@@ -1,5 +1,4 @@
 /* eslint-disable global-require */
-import { url } from 'inspector';
 import type { Config } from 'tailwindcss';
 
 const config = {
