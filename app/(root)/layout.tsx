@@ -13,7 +13,6 @@ ReactNode }) => (
     <StreamVideoProvider>
       { children }
     </StreamVideoProvider>
-    Footer
   </main>
 );
 export default RootLayout;
