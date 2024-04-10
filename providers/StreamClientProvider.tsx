@@ -13,8 +13,8 @@ import React, { ReactNode, useEffect, useState } from 'react';
 
 const apiKey = process.env.NEXT_PUBLIC_STREAM_API_KEY;
 
-const StreamVideoProvider = ({ children }: { children:
-ReactNode }) => {
+function StreamVideoProvider({ children }: { children:
+ReactNode }) {
   const [videoClient, setVideoClient] = useState<StreamVideoClient>();
   const { user, isLoaded } = useUser();
   useEffect(() => {
@@ -37,5 +37,5 @@ ReactNode }) => {
       {children}
     </StreamVideo>
   );
-};
+}
 export default StreamVideoProvider;

@@ -16,7 +16,7 @@ import { useSearchParams, useRouter } from 'next/navigation';
 import EndCallButton from './EndCallButton';
 
 type CallLayoutType = 'grid' | 'speaker-left' | 'speaker-right';
-const MeetingRoom = () => {
+function MeetingRoom() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [layout, setLayout] = useState<CallLayoutType>('speaker-left');
@@ -25,17 +25,16 @@ const MeetingRoom = () => {
   const { useCallCallingState } = useCallStateHooks();
   const callingState = useCallCallingState();
   if (callingState !== CallingState.JOINED) return <Loader />;
-  const CallLayout = () => {
+  function CallLayout() {
     switch (layout) {
       case 'grid':
         return <PaginatedGridLayout />;
       case 'speaker-right':
         return <SpeakerLayout participantsBarPosition="left" />;
       default:
-      case 'speaker-left':
         return <SpeakerLayout participantsBarPosition="right" />;
     }
-  };
+  }
 
   return (
     <section className="relative h-screen w-full overflow-hidden pt-4 text-white">
@@ -89,5 +88,5 @@ const MeetingRoom = () => {
       </div>
     </section>
   );
-};
+}
 export default MeetingRoom;

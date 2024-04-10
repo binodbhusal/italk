@@ -11,7 +11,7 @@ import MeetingModal from './MeetingModal';
 import { Textarea } from './ui/textarea';
 import { Input } from './ui/input';
 
-const MeeetingTypeList = () => {
+function MeeetingTypeList() {
   const [meeting, setMeeting] = useState < 'isScheduleMeeting' | 'isJoiningMeeting' | 'isInstantMeeting' | undefined>();
   const router = useRouter();
   const { user } = useUser();
@@ -161,5 +161,5 @@ const MeeetingTypeList = () => {
       </MeetingModal>
     </section>
   );
-};
+}
 export default MeeetingTypeList;

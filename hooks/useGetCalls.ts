@@ -15,7 +15,7 @@ const useGetCalls = () => {
       if (!client || !user?.id) return;
       setisLoading(true);
       try {
-        const { calls } = await client?.queryCalls({
+        const response = await client?.queryCalls({
           sort: [{ field: 'starts_at', direction: -1 }],
           filter_conditions: {
             starts_at: { $exists: true },
@@ -26,6 +26,7 @@ const useGetCalls = () => {
 
           },
         });
+        const calls = response?.calls;
         setCalls(calls);
       } catch (error) {
         console.log(error);

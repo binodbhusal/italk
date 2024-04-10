@@ -13,7 +13,9 @@
 "no-nested-ternary": "off",
 "react/require-default-props": "off",
 "jsx-a11y/label-has-associated-control": "off",
-"react/no-array-index-key": "off"
-}
-
+"react/no-array-index-key": "off",
+"import/prefer-default-export": "off",
+"react/no-unstable-nested-components": "off"
+},
+  "ignorePatterns": ["postcss.config.js"]
 }

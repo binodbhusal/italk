@@ -5,7 +5,7 @@ import React from 'react';
 import { useRouter } from 'next/navigation';
 import { Button } from './ui/button';
 
-const EndCallButton = () => {
+function EndCallButton() {
   const router = useRouter();
   const call = useCall();
   const { useLocalParticipant } = useCallStateHooks();
@@ -25,5 +25,5 @@ const EndCallButton = () => {
       End meeting call
     </Button>
   );
-};
+}
 export default EndCallButton;

@@ -7,12 +7,14 @@ export const metadata: Metadata = {
   description: 'Video calling app',
   icons: '/icons/logo.svg',
 };
-const RootLayout = ({ children }: { children:
-ReactNode }) => (
-  <main>
-    <StreamVideoProvider>
-      { children }
-    </StreamVideoProvider>
-  </main>
-);
+function RootLayout({ children }: { children:
+ReactNode }) {
+  return (
+    <main>
+      <StreamVideoProvider>
+        { children }
+      </StreamVideoProvider>
+    </main>
+  );
+}
 export default RootLayout;

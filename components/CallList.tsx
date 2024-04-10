@@ -11,7 +11,7 @@ import MeetingCard from './MeetingCard';
 import Loader from './Loader';
 import { useToast } from './ui/use-toast';
 
-const CallList = ({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) => {
+function CallList({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) {
   const {
     endedCalls, upcomingCalls, callRecordings, isLoading,
   } = useGetCalls();
@@ -89,5 +89,5 @@ const CallList = ({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) => {
       )}
     </div>
   );
-};
+}
 export default CallList;

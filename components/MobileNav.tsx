@@ -13,7 +13,7 @@ import sidebarLinks from '@/constants';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
-const MobileNav = () => {
+function MobileNav() {
   const pathname = usePathname();
   return (
     <section className="w-full max-w[264px]">
@@ -75,5 +75,5 @@ const MobileNav = () => {
       </Sheet>
     </section>
   );
-};
+}
 export default MobileNav;
