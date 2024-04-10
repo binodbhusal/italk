@@ -90,7 +90,7 @@ Make sure you have the following installed on your machine:
 
 ### Setup
 
-<Strong>Cloning the Repository</Strong>
+**Cloning the Repository**
 
 ```sh
 git clone https://github.com/binodbhusal/italk.git
@@ -105,10 +105,6 @@ cd iTALK
 ```sh
 npm install
 ````
-
-```sh
-npm start
-```
 **Set Up Environment Variables**
 
 Create a new file named `.env` in the root of your project and add the following content:
@@ -122,6 +118,7 @@ NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 
 NEXT_PUBLIC_STREAM_API_KEY=
 STREAM_SECRET_KEY=
+NEXT_PUBLIC_BASE_URL=localhost:3000
 ```
 **Running the Project**
 
