@@ -47,6 +47,7 @@
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
+
 .glassmorphism2 {
   background: rgba(18, 17, 17, 0.25);
   backdrop-filter: blur(8px);
@@ -57,12 +58,15 @@
 .cl-providerIcon__github {
   filter: invert(1);
 }
+
 .cl-userButtonPopoverActionButtonIcon {
   color: white;
 }
+
 .cl-logoBox {
   height: 40px;
 }
+
 .cl-dividerLine {
   background: #252a41;
   height: 2px;
@@ -75,6 +79,7 @@
 .cl-internal-wkkub3 {
   color: white;
 }
+
 .cl-userButtonPopoverActionButton {
   color: white;
 }

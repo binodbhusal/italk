@@ -83,9 +83,10 @@ and many more, including code architecture and reusability.
 ### Prerequisites
 
 Make sure you have the following installed on your machine:
-Git
-Node.js
-npm (Node Package Manager)
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
 
 ### Setup
 
@@ -108,8 +109,11 @@ npm install
 ```sh
 npm start
 ```
-<Strong>Set Up Environment Variables</Strong>
-    ```sh
+**Set Up Environment Variables**
+
+Create a new file named `.env` in the root of your project and add the following content:
+
+```env
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
 
@@ -118,12 +122,14 @@ NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 
 NEXT_PUBLIC_STREAM_API_KEY=
 STREAM_SECRET_KEY=
-    ````
-<Strong>Running the Project</Strong>
-            ```sh
-        npm run dev
-        ````
-    Open http://localhost:3000 in your browser to view the project.
+```
+**Running the Project**
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

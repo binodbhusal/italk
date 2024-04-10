@@ -50,7 +50,6 @@ const MeeetingTypeList = () => {
       }
       toast({ title: 'Meeting created' });
     } catch (error) {
-      console.log(error);
       toast({ title: 'Failed to create meeting' });
     }
   };
@@ -105,10 +104,11 @@ const MeeetingTypeList = () => {
             />
           </div>
           <div className="flex flex-col w-full gap-2.5">
-            <label htmlFor="" className="text-base text-normal leading-[22px]">
+            <label htmlFor="datetime" className="text-base text-normal leading-[22px]">
               Select Date and Time
             </label>
             <ReactDatePicker
+              id="datetime"
               className="bg-dark-2 w-full rounded p-2 focus:outline-none"
               selected={values.dateTime}
               onChange={(date) => setValues({ ...values, dateTime: date! })}

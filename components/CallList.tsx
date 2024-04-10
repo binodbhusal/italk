@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-shadow */
 // @ts-nocheck
 
 'use client';
@@ -6,7 +7,6 @@ import useGetCalls from '@/hooks/useGetCalls';
 import { Call, CallRecording } from '@stream-io/video-react-sdk';
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
-import { title } from 'process';
 import MeetingCard from './MeetingCard';
 import Loader from './Loader';
 import { useToast } from './ui/use-toast';
@@ -51,7 +51,7 @@ const CallList = ({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) => {
         const recordings = callData
           .filter((call) => call.recordings.length > 0)
           .flatMap((call) => call.recordings);
-        setRecordings(recordings); // Use the correct variable name here
+        setRecordings(recordings);
       } catch (error) {
         toast({ title: 'Try again later' });
       }
